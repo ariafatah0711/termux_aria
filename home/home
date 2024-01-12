@@ -1,1 +1,37 @@
-test
+clear
+blue='\033[34;1m'
+green='\033[32;1m'
+purple='\033[35;1m'
+cyan='\033[36;1m'
+red='\033[31;1m'
+white='\033[37;1m'
+yellow='\033[33;1m'
+
+echo
+#toilet -f big -F gay ariafatah
+toilet -f pagga -F border --gay TERM_ARIA.
+echo
+echo "$red   [*] $yellow by ariafatah0711 $red|$white version 1.0"
+echo
+sleep 1
+
+echo $red"   [1]" $green"weeman"
+echo $red"   [2]" $green"ngrok"
+
+echo $white
+read -p " Select Option(q = quit) : " choice
+echo $white
+
+if [ "$choice" = 1 ]; then
+	cd weeman; python2 weeman.py; sleep 1
+	cd; sh .home
+elif [ "$choice" = 2 ]; then
+	read -p " port(q = quit) : " port
+  [ ${#port} -eq 4 ] && ./ngrok http http://localhost:$port; sh .home || sh .home
+#elif [ "$choice" = 3 ]; then
+elif [ "$choice" = Q ] || [ "$choice" = q ]; then
+	exit
+else
+	echo $red"Invalid Option, Try Again!\n"
+	sleep 1; sh .home
+fi

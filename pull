@@ -1,0 +1,4 @@
+cp ../../usr/etc/bash.bashrc bash/bash.bashrc
+cp ../.home home/home
+cp ../.login.py home/login.py 
+cp ~/.termux/font.ttf fonts/
