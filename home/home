@@ -16,7 +16,8 @@ echo
 sleep 1
 
 echo $red"   [1]" $green"weeman"
-echo $red"   [2]" $green"ngrok"
+echo $red"   [2]" $green"apache2"
+echo $red"   [3]" $green"ngrok"
 
 echo $white
 read -p " Select Option(q = quit) : " choice
@@ -26,8 +27,14 @@ if [ "$choice" = 1 ]; then
 	cd weeman; python2 weeman.py; sleep 1
 	cd; sh .home
 elif [ "$choice" = 2 ]; then
+	while true; do
 	read -p " port(q = quit) : " port
-  [ ${#port} -eq 4 ] && ./ngrok http http://localhost:$port; sh .home || sh .home
+	[ ${#port} -eq 4 ] && apachectl -k start -D "Listen $port"
+	[ "$port" = q ] && apachectl -k stop && sh .home && break
+	done
+elif [ "$choice" = 3 ]; then
+	read -p " port(q = quit) : " port
+	[ ${#port} -eq 4 ] && ./ngrok http http://localhost:$port; sh .home || sh .home
 #elif [ "$choice" = 3 ]; then
 elif [ "$choice" = Q ] || [ "$choice" = q ]; then
 	exit
