@@ -16,7 +16,7 @@ My file bash, and configurate for termux
 this is my termux conf, and my file for run termux
 
 <p align="left"> <a href="#">
-  <img alt='Bash/Shell' src='https://img.shields.io/badge/-Bash%2FShell-4EAA25?style=flat-square'>
+  <img alt='Bash' src='https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white'>
   <img alt="linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
   </a>
 </p>
@@ -24,8 +24,8 @@ this is my termux conf, and my file for run termux
 <p id="table-of-contents"></p>
 
 ## 📋 Table of Contents
-<details open>
-  <summary><b>set uo</b></summary>
+<details>
+  <summary><b>set up termux</b></summary>
 
   - setup
     ```
@@ -49,7 +49,7 @@ this is my termux conf, and my file for run termux
     ```
 </details>
 
-<details open>
+<details>
   <summary><b>apache2</b></summary>
 
   - apt install apache2
