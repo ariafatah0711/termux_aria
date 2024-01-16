@@ -1,6 +1,6 @@
-# title
+# termux_aria
 
-description
+My file bash, and configurate for termux
 
 <p align="center">
   <a href="#introduction">introduction</a> •
@@ -13,22 +13,51 @@ description
 <p id="introduction"></p>
 
 ## 🚀 introduction
-introduction this repo
+this is my termux conf, and my file for run termux
 
 <p align="left"> <a href="#">
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img alt="css3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-  <img alt="javascript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img alt='Bash/Shell' src='https://img.shields.io/badge/-Bash%2FShell-4EAA25?style=flat-square'>
+  <img alt="linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
   </a>
 </p>
 
 <p id="table-of-contents"></p>
 
 ## 📋 Table of Contents
-<details id="back" open>
-  <summary><b>article</b></summary>
+<details open>
+  <summary><b>set uo</b></summary>
 
-  content
+  - setup
+    ```
+    termux-setup-storage # akses storage
+    termux-change-repo # change repository
+    ```
+  - update repo
+    ```
+    pkg update pkg upgrade upgrade # or pkg-get <option>
+    ```
+  - install package
+    ```
+    pkg install git wget zip unzip nano
+    pkg install python python2 python3 ruby
+      - gem install lolcat
+    pkg install cmatrix neofetch toilet # showfigfonts ex: toilet -f big -F gat ariafatah
+    ```
+  - install package opsional for developer
+    ```
+    pkg install nodejs clang php # opsional
+    ```
+</details>
+
+<details open>
+  <summary><b>apache2</b></summary>
+
+  - apt install apache2
+  - nano ../usr/etc/apache2/httpd.conf
+  - cd ../usr/share/apache2/default-site/htdocs/
+    - nano index.html
+  - apache2 -k start -f "/path/to/your/httpd.conf" -D "Listen 8080"
+  - apache2 -k stop
 </details>
 
 <p id="download"></p>
@@ -41,15 +70,6 @@ introduction this repo
    ```sh
    git clone https://github.com/ariafatah0711/dicoding_3.git
    ```
-4. Ensure NodeJS is installed, then run the following command to install npm:
-   ```sh
-   npm install
-   ```
-5. Execute the following command to build and run the project:
-   ```sh
-   npm run start-dev
-   ```
-6. lauch http://localhost:8080/ in web browser
 
 <p id="related"></p>
 
@@ -61,4 +81,3 @@ introduction this repo
 ## ©️ license
 <a href="https://github.com/ariafatah0711" alt="CREATED"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=CREATED%20BY&message=ariafatah0711&color=000000"></a>
 <a href="https://github.com/ariafatah0711/ariafatah0711/blob/main/LICENSE" alt="LICENSE"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=LICENSE&message=MIT&color=000000"></a>
-<!-- <a href="https://github.com/ariafatah0711//blob/main/LICENSE" alt="LICENSE"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=LICENSE&message=APACHE&color=000000"></a> -->
