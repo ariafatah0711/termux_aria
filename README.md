@@ -74,7 +74,6 @@ this is my termux conf, and my file for run termux
 <p id="related"></p>
 
 ## 📈 related
-<a href="" alt="DEMO"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=DEMO&message=WEB&color=000000"></a>
 
 <p id="license"></p>
 
