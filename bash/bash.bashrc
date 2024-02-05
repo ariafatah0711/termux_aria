@@ -120,5 +120,9 @@ alias ln='ln -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias ll='ls -l'
+alias cpp='g++'
+alias cppout='./a.out'
+
 ## Proot env
 alias nethunter='proot-distro login nethunter'
