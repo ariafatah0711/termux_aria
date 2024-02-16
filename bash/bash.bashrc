@@ -123,6 +123,7 @@ alias rm='rm -i'
 alias ll='ls -l'
 alias cpp='g++'
 alias cppout='./a.out'
+alias cl='clear'
 
 ## Proot env
 alias nethunter='proot-distro login nethunter'

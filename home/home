@@ -19,6 +19,7 @@ echo $red"   [1]" $green"weeman"
 echo $red"   [2]" $green"apache2"
 echo $red"   [3]" $green"seeker"
 echo $red"   [4]" $green"ngrok"
+echo $red"   [5]" $green"PyPhisher"
 
 echo $white
 read -p " Select Option(q = quit) : " choice
@@ -38,9 +39,10 @@ elif [ "$choice" = 3 ]; then
 elif [ "$choice" = 4 ]; then
 	read -p " port(q = quit) : " port
 	[ ${#port} -eq 4 ] && ./ngrok http http://localhost:$port; sh .home || sh .home
-#elif [ "$choice" = 3 ]; then
+elif [ "$choice" = 5 ]; then
+	cd PyPhisher; python3 pyphisher.py
 elif [ "$choice" = Q ] || [ "$choice" = q ]; then
-	exit
+	clear && exit
 else
 	echo $red"Invalid Option, Try Again!\n"
 	sleep 1; sh .home
