@@ -60,6 +60,92 @@ this is my termux conf, and my file for run termux
   - apache2 -k stop
 </details>
 
+<details>
+  <summary><b>nginx</b></summary>
+
+  - apt install nginx
+  - nano ../usr/etc/nginx/nginx.conf
+  - cd ../usr/share/nginx/html/
+    - nano index.html
+  - nginx -h
+  - nginx -s start -f "/path/to/your/httpd.conf" -D "Listen 8080"
+  - nginx -s stop
+</details>
+
+<details>
+  <summary><b>weeman</b></summary>
+
+  - pip2 install beautifulsoup bs4
+  - git clone https://github.com/evait-security/weeman
+  - python2 weeman/weeman.py
+    - set url https://facebook.com
+    - set action_url https://facebook.com
+    - set port 8080
+    - run
+</details>
+
+<details>
+  <summary><b>ngrok</b></summary>
+
+  - Login acc  https://ngrok.com/
+    - Donwoald Linux arms64
+  - cd storage/downloads
+    - cp -f nama_file.tgz $HOME
+    - tar -xvzf namafile.tgz
+    - chmod +x ngrok
+  - copy  ur acc Authtoken
+    - ./ngrok config add-authtoken your_token
+    - ./ngrok config upgrade
+  - use VPN to safety and Turn on hotspot
+    - ./ngrok http 8080
+    - ./ngrok http http://localhost:8080
+</details>
+
+<details>
+  <summary><b>neovim</b></summary>
+
+  - pkg install neovim git wget nodejs python lua-language-server -y
+  - open browser go to url https://nvchad.com/
+    - click install
+    - copy git clone
+  - git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+  - example custom config? N
+    - Waiting and :q enter
+  - Code suggestions and auto complete
+    - pkg install clang -y
+    - cd .config/nvim
+    - nvim
+      - Ctrl n
+      - https://nvchad.com/docs/config/lsp ::configuration
+</details>
+
+<details>
+  <summary><b>change font</b></summary>
+
+  - open browser go to url nerdfonts.com
+    - Donwodl > and search JetBrains > copy url link
+  - mkdir fonts; cd fonts
+    - wget url_link
+    - unzip nama_file.zip
+  - cp JetBrainsMonoNerdFont-Bold.ttf ~/.termux/font.ttf
+</details>
+
+<details>
+  <summary><b>ssh</b></summary>
+
+  - server
+    - Pkg install openssh
+    - passwd
+      - sshd #nyalain ssh
+      - pidof sshd #cek ssh udh nyala
+    - Ifconfig #wlan 0
+       - Nmap 10.10.10.1 #port 8022/tcp
+
+  - client
+    - ```ssh username@ip_address -p 8022```
+</details>
+
+
 <p id="download"></p>
 
 ## 🔨 download
@@ -68,7 +154,7 @@ this is my termux conf, and my file for run termux
 2. Navigate to the directory where you want to save this project.
 3. Use the following command to download the project from the GitHub repository:
    ```sh
-   git clone https://github.com/ariafatah0711/dicoding_3.git
+   git clone https://github.com/ariafatah0711/termux_aria.git
    ```
 
 <p id="related"></p>
