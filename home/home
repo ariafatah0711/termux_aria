@@ -46,7 +46,7 @@ elif [ "$choice" = Q ] || [ "$choice" = q ]; then
 elif [ "$choice" = backup ]; then
   cd /data/data/com.termux/files; tar -zcf /sdcard/termux-backup.tar.gz home usr
 elif [ "$choice" = restore ]; then
-  termux-setup-storage; cd /data/data/com.termux/files; tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-perrmissions
+  termux-setup-storage; cd /data/data/com.termux/files; tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-permissions
 else
 	echo $red"Invalid Option, Try Again!\n"
 	sleep 1; sh .home
