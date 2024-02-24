@@ -43,6 +43,10 @@ elif [ "$choice" = 5 ]; then
 	cd PyPhisher; python3 pyphisher.py
 elif [ "$choice" = Q ] || [ "$choice" = q ]; then
 	clear && exit
+elif [ "$choice" = backup ]; then
+  cd /data/data/com.termux/files; tar -zcf /sdcard/termux-backup.tar.gz home usr
+elif [ "$choice" = restore ]; then
+  termux-setup-storage; cd /data/data/com.termux/files; tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-permissions
 else
 	echo $red"Invalid Option, Try Again!\n"
 	sleep 1; sh .home
