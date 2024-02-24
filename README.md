@@ -145,6 +145,59 @@ this is my termux conf, and my file for run termux
     - ```ssh username@ip_address -p 8022```
 </details>
 
+<details>
+  <summary><b>termux x11</b></summary>
+
+  - install termux x11 in https://github.com/termux/termux-x11
+  - open termux
+    - pkg instakk x11-repo
+    - pkg install termux-x11-nightly
+    - pkg install proot-distro
+  - proot-distro -h
+    - proot-distro list
+    - proot-distro install debian
+  - login distro
+    - proot-distro login debian
+    - apt update -y
+    - apt install nano adduser
+    - apt install sudo
+    - adduser ariafatah
+    - nano /etc/sudoers
+      ```
+      # User privilege specification
+      root    ALL=(ALL:ALL) ALL
+      ariafatah       ALL=(ALL:ALL) ALL
+      ```
+    - su ariafatah
+    - sudo apt install xfce4 -y
+    - exit, exit
+  - termux
+    - wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/startxfce4_debian.sh
+    - chmod +x startxfce4_debian.sh
+    - nano startxfce4_debian.sh
+    - change user
+    - ./startxfce4_debian.sh
+  - how use
+    - Dalam mode emulasi touchpad Anda dapat menggunakan gerakan berikut:
+      - Ketuk klik
+      - Ketuk dua kali untuk klik dua kali
+      - Ketuk dua jari untuk klik kanan
+      - Ketuk tiga jari untuk klik tengah
+      - Gesek vertikal dua jari untuk gulir vertikal
+      - Gesek horizontal dua jari untuk gulir horizontal
+      - Gesek tiga jari ke bawah untuk memperlihatkan-menyembunyikan bilah tombol tambahan.
+    - Mode layar sentuh simulasi.
+    - Dalam mode layar sentuh simulasi, Anda dapat menggunakan gerakan berikut:
+      - Ketuk sekali untuk klik tombol kiri.
+      - Ketuk lama untuk memegang mouse.
+      - Ketuk dua kali untuk klik dua kali
+      - Ketuk dua jari untuk klik kanan
+      - Ketuk tiga jari untuk klik tengah
+      - Gesek vertikal dua jari untuk gulir vertikal
+      - Gesek horizontal dua jari untuk gulir horizontal
+      - Gesek tiga jari ke bawah untuk memperlihatkan-menyembunyikan bilah tombol tambahan.
+</details>
+
 
 <p id="download"></p>
 
