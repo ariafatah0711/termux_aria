@@ -198,6 +198,33 @@ this is my termux conf, and my file for run termux
       - Gesek tiga jari ke bawah untuk memperlihatkan-menyembunyikan bilah tombol tambahan.
 </details>
 
+<details>
+  <summary><b>vnc server</b></summary>
+
+  - proot distro
+    - apt install tigervnc-standalone-server
+    - apt install dbus-x11
+    - which startxfce4
+    - vncserver -xstartup /usr/bin/startxfce4
+    - vncserver -kill :1
+  - if have many local port
+    - rm -f /tmp/.X11-unix/X1 /tmp/.X1-lock /tmp/.X11-unix/X2 /tmp/.X2-lock
+</details>
+
+<details>
+  <summary><b>setup</b></summary>
+
+  - apt install xfce4-terminal
+  - chrome
+    - apt install chromium -y
+    - chromium --no-sandbox
+    - setting panel, remove browser default, setting laucher, add chromium, and change command add --no-sandbox
+  - visual studio
+    - install visual studio in browser .deb
+      - sudo dpkg -i package.deb
+      - setting panel, add laucher, setting laucher, add vscode
+      - add add paramter --no-sandbox
+</details>
 
 <p id="download"></p>
 
