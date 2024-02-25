@@ -13,6 +13,7 @@ toilet -f pagga -F border --gay TERM_ARIA.
 echo
 echo "$red   [*] $yellow by ariafatah0711 $red|$white version 1.0"
 echo
+stty -echo
 sleep 1
 
 echo $red"   [1]" $green"weeman"
@@ -22,6 +23,7 @@ echo $red"   [4]" $green"ngrok"
 echo $red"   [5]" $green"PyPhisher"
 
 echo $white
+stty echo
 read -p " Select Option(q = quit) : " choice
 echo $white
 
@@ -43,10 +45,6 @@ elif [ "$choice" = 5 ]; then
 	cd PyPhisher; python3 pyphisher.py
 elif [ "$choice" = Q ] || [ "$choice" = q ]; then
 	clear && exit
-elif [ "$choice" = backup ]; then
-  cd /data/data/com.termux/files; tar -zcf /sdcard/termux-backup.tar.gz home usr
-elif [ "$choice" = restore ]; then
-  termux-setup-storage; cd /data/data/com.termux/files; tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-permissions
 else
 	echo $red"Invalid Option, Try Again!\n"
 	sleep 1; sh .home

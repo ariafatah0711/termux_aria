@@ -127,3 +127,4 @@ alias cl='clear'
 
 ## Proot env
 alias nethunter='proot-distro login nethunter'
+alias debian='proot-distro login debian --user'
