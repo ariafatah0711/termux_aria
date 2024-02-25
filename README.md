@@ -50,6 +50,18 @@ this is my termux conf, and my file for run termux
 </details>
 
 <details>
+  <summary><b>change font</b></summary>
+
+  - open browser go to url nerdfonts.com
+    - Donwodl > and search JetBrains > copy url link
+  - mkdir fonts; cd fonts
+    - wget url_link
+    - unzip nama_file.zip
+  - cp JetBrainsMonoNerdFont-Bold.ttf ~/.termux/font.ttf
+</details>
+
+- package
+<details>
   <summary><b>apache2</b></summary>
 
   - apt install apache2
@@ -120,17 +132,6 @@ this is my termux conf, and my file for run termux
 </details>
 
 <details>
-  <summary><b>change font</b></summary>
-
-  - open browser go to url nerdfonts.com
-    - Donwodl > and search JetBrains > copy url link
-  - mkdir fonts; cd fonts
-    - wget url_link
-    - unzip nama_file.zip
-  - cp JetBrainsMonoNerdFont-Bold.ttf ~/.termux/font.ttf
-</details>
-
-<details>
   <summary><b>ssh</b></summary>
 
   - server
@@ -144,6 +145,8 @@ this is my termux conf, and my file for run termux
   - client
     - ```ssh username@ip_address -p 8022```
 </details>
+
+- linux gui
 
 <details>
   <summary><b>termux x11</b></summary>
@@ -199,20 +202,7 @@ this is my termux conf, and my file for run termux
 </details>
 
 <details>
-  <summary><b>vnc server</b></summary>
-
-  - proot distro
-    - apt install tigervnc-standalone-server
-    - apt install dbus-x11
-    - which startxfce4
-    - vncserver -xstartup /usr/bin/startxfce4
-    - vncserver -kill :1
-  - if have many local port
-    - rm -f /tmp/.X11-unix/X1 /tmp/.X1-lock /tmp/.X11-unix/X2 /tmp/.X2-lock
-</details>
-
-<details>
-  <summary><b>setup</b></summary>
+  <summary><b>xfce4</b></summary>
 
   - apt install xfce4-terminal
   - chrome
@@ -224,6 +214,20 @@ this is my termux conf, and my file for run termux
       - sudo dpkg -i package.deb
       - setting panel, add laucher, setting laucher, add vscode
       - add add paramter --no-sandbox
+</details>
+
+<details>
+  <summary><b>vnc server</b></summary>
+
+  - proot distro
+    - apt install tigervnc-standalone-server
+    - apt install dbus-x11
+    - which startxfce4
+    - vncserver -xstartup /usr/bin/startxfce4
+    - vncserver -xstartup /usr/bin/startxfce4 -localhost no
+    - vncserver -kill :1
+  - if have many local port
+    - rm -f /tmp/.X11-unix/X1 /tmp/.X1-lock /tmp/.X11-unix/X2 /tmp/.X2-lock
 </details>
 
 <p id="download"></p>
