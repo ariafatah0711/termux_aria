@@ -75,7 +75,7 @@ this is my termux conf, and my file for run termux
     - ```ssh username@ip_address -p 8022```
 </details>
 
-- package
+### package
 
 <details>
   <summary><b>apache2</b></summary>
@@ -147,7 +147,7 @@ this is my termux conf, and my file for run termux
       - https://nvchad.com/docs/config/lsp ::configuration
 </details>
 
-- linux gui
+### linux gui
 
 <details>
   <summary><b>termux x11</b></summary>
