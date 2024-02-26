@@ -60,7 +60,23 @@ this is my termux conf, and my file for run termux
   - cp JetBrainsMonoNerdFont-Bold.ttf ~/.termux/font.ttf
 </details>
 
+<details>
+  <summary><b>ssh</b></summary>
+
+  - server
+    - Pkg install openssh
+    - passwd
+      - sshd #nyalain ssh
+      - pidof sshd #cek ssh udh nyala
+    - Ifconfig #wlan 0
+       - Nmap 10.10.10.1 #port 8022/tcp
+
+  - client
+    - ```ssh username@ip_address -p 8022```
+</details>
+
 - package
+
 <details>
   <summary><b>apache2</b></summary>
 
@@ -131,21 +147,6 @@ this is my termux conf, and my file for run termux
       - https://nvchad.com/docs/config/lsp ::configuration
 </details>
 
-<details>
-  <summary><b>ssh</b></summary>
-
-  - server
-    - Pkg install openssh
-    - passwd
-      - sshd #nyalain ssh
-      - pidof sshd #cek ssh udh nyala
-    - Ifconfig #wlan 0
-       - Nmap 10.10.10.1 #port 8022/tcp
-
-  - client
-    - ```ssh username@ip_address -p 8022```
-</details>
-
 - linux gui
 
 <details>
@@ -153,7 +154,7 @@ this is my termux conf, and my file for run termux
 
   - install termux x11 in https://github.com/termux/termux-x11
   - open termux
-    - pkg instakk x11-repo
+    - pkg install x11-repo
     - pkg install termux-x11-nightly
     - pkg install proot-distro
   - proot-distro -h
